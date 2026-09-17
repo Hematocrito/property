@@ -7,77 +7,77 @@ export interface GalleryImage {
 export const apartmentImages: GalleryImage[] = [
   {
     url: '/images/IMG_comedor.jpg',
-    alt: 'Spacious modern living room featuring elegant chandeliers, plush sofa, and contemporary decor.',
+    alt: 'Living comedor amplio con excelente iluminación natural, perfecto para crear un espacio acogedor y funcional.',
     category: 'Living Room',
   },
   {
     url: '/images/IMG_balcon_HDR.jpg',
-    alt: 'Modern living room with comfortable big sofa and dining zone with creative lamps and mirror in daylight.',
+    alt: 'Balcón con salida directa desde el comedor y agradable vista exterior.',
     category: 'Living Room',
   },
   {
-    url: '/images/IMG_balcon.jpg',
-    alt: 'Elegant modern living room with corner sofa and minimalist decor.',
+    url: '/images/IMG_pasillo.jpg',
+    alt: 'Pasillo distribuidor que integra cada espacio del departamento.',
     category: 'Living Room',
   },
   {
     url: '/images/IMG_cocina1.jpg',
-    alt: 'Stylish kitchen with wooden table, chairs, modern cupboards and appliances.',
-    category: 'Kitchen',
+    alt: 'Ambiente de cocina funcional, con calefón, cocina a gas y sectores preparados para heladera y lavarropas. Incluye mesa plegable',
+    category: 'Cocina',
   },
   {
     url: '/images/IMG_cocina2.jpg',
-    alt: 'Modern apartment kitchen with glossy cabinets and adjacent living area.',
-    category: 'Kitchen',
+    alt: 'Espacio de cocina ventilado y cómodo, preparado para facilitar tus rutinas.',
+    category: 'Cocina',
   },
   {
     url: '/images/IMG_cocina3.jpg',
-    alt: 'Modern light kitchen with minimalist furniture and illumination.',
-    category: 'Kitchen',
+    alt: 'Cocina práctica con muebles inferiores y alacena superior, ideal para almacenamiento.',
+    category: 'Cocina',
   },
   {
     url: '/images/IMG_dormitorio1.jpg',
-    alt: 'Contemporary bedroom featuring a stylish brick accent wall and elegant decor.',
-    category: 'Bedroom',
+    alt: 'Habitación luminosa con vista a la calle, ubicada junto al baño y con piso de parquet.',
+    category: 'Dormitorio',
   },
   {
     url: '/images/IMG_dormitorio2.jpg',
-    alt: 'Contemporary bedroom with white built-in wardrobe and shelves behind bed.',
-    category: 'Bedroom',
+    alt: 'Habitaciones luminosas con ventana exterior, amplios placares y elegantes pisos de parquet.',
+    category: 'Dormitorio',  
   },
   {
     url: '/images/IMG_dormitorio3.jpg',
-    alt: 'Cozy modern bedroom with green bedding and soft lighting.',
-    category: 'Bedroom',
+    alt: 'Dormitorios con vista a la calle, placard de gran capacidad y pisos de parquet.',
+    category: 'Dormitorio',
   },
   {
     url: '/images/IMG_balcon_HDR.jpg',
-    alt: 'Spacious terrace with glass barrier and metal railings overlooking the city.',
-    category: 'Balcony',
+    alt: 'Balcón con salida directa desde el comedor y agradable vista exterior.',
+    category: 'Balcón',
   },
   {
     url: '/images/IMG_balcon.jpg',
-    alt: 'Spacious city balcony with table and chairs overlooking a scenic urban view.',
-    category: 'Balcony',
-  },
-  {
-    url: '/images/IMG_bano1.jpg',
-    alt: 'Modern minimalist bathroom with glass shower cabin and shiny tiled walls.',
-    category: 'Bathroom',
+    alt: 'Balcón luminoso conectado al comedor, ideal para disfrutar del aire libre.',
+    category: 'Balcón',
   },
   {
     url: '/images/IMG_bano2.jpg',
-    alt: 'Bright washroom with washing machine, shower, and sink.',
-    category: 'Bathroom',
+    alt: 'Baño funcional y completo, con bañera incorporada.',
+    category: 'Baño',
+  },
+  {
+    url: '/images/IMG_bano1.jpg',
+    alt: 'Ambiente de baño equipado, incluye bañera.',
+    category: 'Baño',
   },
   {
     url: '/images/IMG_pasillo.jpg',
-    alt: 'Bright washroom with washing machine, shower, and sink.',
-    category: 'Bathroom',
+    alt: 'Pasillo conector interno que organiza la distribución del hogar.',
+    category: 'Baño', 
   },
 ];
 
-export const galleryCategories = ['All', 'Living Room', 'Kitchen', 'Bedroom', 'Balcony', 'Bathroom'];
+export const galleryCategories = ['Todos', 'Living Room', 'Cocina', 'Dormitorio', 'Balcón', 'Baño'];
 
 export interface Amenity {
   icon: string;

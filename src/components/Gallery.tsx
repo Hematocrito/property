@@ -49,12 +49,12 @@ function GalleryTile({
 }
 
 export default function Gallery() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState('Todos');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
 
   const filteredImages =
-    activeCategory === 'All'
+    activeCategory === 'Todos'
       ? apartmentImages
       : apartmentImages.filter((img) => img.category === activeCategory);
 
@@ -102,7 +102,7 @@ export default function Gallery() {
   const [showShareModal, setShowShareModal] = useState(false);
 
   const galleryUrl = typeof window !== 'undefined'
-    ? `${window.location.origin}${window.location.pathname}?view=full&photo=${lightboxIndex ?? 0}#gallery`
+    ? `${window.location.origin}${window.location.pathname}`
     : '';
 
   const copyToClipboard = (text: string): boolean => {
@@ -128,8 +128,6 @@ export default function Gallery() {
 
   const handleShareGallery = async () => {
     const shareData = {
-      title: 'Maison Apartment — Photo Gallery',
-      text: 'Take a look around this beautiful apartment.',
       url: galleryUrl,
     };
 
@@ -158,13 +156,13 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <span className="text-xs font-semibold tracking-widest uppercase text-stone-500">
-            Photo Gallery
+            Galería de fotos
           </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold text-stone-900 tracking-tight">
-            Explore Every Corner
+            Explora Cada Rincón
           </h2>
           <p className="mt-4 text-stone-600 max-w-2xl mx-auto">
-            Take a visual tour of the apartment. Click any photo to view it in full screen.
+            Navega por las imágenes para conocer el lugar. Haz clic en cualquier foto para verla en pantalla completa.
           </p>
           <button
             onClick={handleShareGallery}
