@@ -169,7 +169,7 @@ export default function Gallery() {
             className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-900 text-white text-sm font-semibold shadow-md hover:bg-stone-800 hover:-translate-y-0.5 transition-all duration-300"
           >
             {copied ? <Check className="w-4 h-4 text-green-300" /> : <Share2 className="w-4 h-4" />}
-            {copied ? 'Gallery link copied' : 'Share full gallery'}
+            {copied ? 'Link copiado' : 'Compartir gallería'}
           </button>
         </div>
 
@@ -241,16 +241,7 @@ export default function Gallery() {
           className="fixed inset-0 z-[100] bg-stone-950/95 backdrop-blur-sm flex items-center justify-center"
           onClick={closeLightbox}
         >
-          <button
-            className="absolute top-6 right-20 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleShareGallery();
-            }}
-            aria-label="Share gallery"
-          >
-            {copied ? <Check className="w-5 h-5 text-green-300" /> : <Share2 className="w-5 h-5 text-white" />}
-          </button>
+          
 
           <button
             className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
