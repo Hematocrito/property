@@ -169,7 +169,7 @@ export default function Gallery() {
             className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-stone-900 text-white text-sm font-semibold shadow-md hover:bg-stone-800 hover:-translate-y-0.5 transition-all duration-300"
           >
             {copied ? <Check className="w-4 h-4 text-green-300" /> : <Share2 className="w-4 h-4" />}
-            {copied ? 'Link copiado' : 'Compartir gallería'}
+            {copied ? 'Link copiado' : 'Compartir galería'}
           </button>
         </div>
 
